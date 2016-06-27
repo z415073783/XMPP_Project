@@ -24,6 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = nc
         
+        //socket登录
+        SocketConfigure.getInstance.ipconfig = "10.3.17.240"
+        SocketConfigure.getInstance.port = 9090
+//        ServerSocket.getInstance()
+//        ServerSocket.beginLoginWithAccount("zlm", password: "zlm")
+        XMPPServer.getInstance.connet()
+        
+        
+        
         return true
     }
 

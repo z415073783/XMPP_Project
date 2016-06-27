@@ -37,6 +37,9 @@
 		48B4EFB91D1D0B8C00B30292 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EF9D1D1D0B8C00B30292 /* UIImageView+WebCache.m */; };
 		48B4EFBA1D1D0B8C00B30292 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EF9F1D1D0B8C00B30292 /* UIView+WebCacheOperation.m */; };
 		48B4EFBB1D1D0B8C00B30292 /* SQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFA21D1D0B8C00B30292 /* SQLOperation.swift */; };
+		48B4EFC51D1D1B6600B30292 /* ServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFC11D1D1B6600B30292 /* ServerSocket.m */; };
+		48B4EFCA1D20BF1200B30292 /* SocketConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFC91D20BF1200B30292 /* SocketConfigure.swift */; };
+		48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,10 @@
 		48B4EF9E1D1D0B8C00B30292 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		48B4EF9F1D1D0B8C00B30292 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		48B4EFA21D1D0B8C00B30292 /* SQLOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLOperation.swift; sourceTree = "<group>"; };
+		48B4EFC01D1D1B6600B30292 /* ServerSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerSocket.h; sourceTree = "<group>"; };
+		48B4EFC11D1D1B6600B30292 /* ServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerSocket.m; sourceTree = "<group>"; };
+		48B4EFC91D20BF1200B30292 /* SocketConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConfigure.swift; sourceTree = "<group>"; };
+		48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPServer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,8 +359,28 @@
 		48B4EFBC1D1D180500B30292 /* XMPPManager */ = {
 			isa = PBXGroup;
 			children = (
+				48B4EFCB1D20CB6F00B30292 /* XMPP */,
+				48B4EFBD1D1D1B6600B30292 /* SocketOperation */,
 			);
 			path = XMPPManager;
+			sourceTree = "<group>";
+		};
+		48B4EFBD1D1D1B6600B30292 /* SocketOperation */ = {
+			isa = PBXGroup;
+			children = (
+				48B4EFC01D1D1B6600B30292 /* ServerSocket.h */,
+				48B4EFC11D1D1B6600B30292 /* ServerSocket.m */,
+				48B4EFC91D20BF1200B30292 /* SocketConfigure.swift */,
+			);
+			path = SocketOperation;
+			sourceTree = "<group>";
+		};
+		48B4EFCB1D20CB6F00B30292 /* XMPP */ = {
+			isa = PBXGroup;
+			children = (
+				48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */,
+			);
+			path = XMPP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,8 +538,11 @@
 				48B4EFA71D1D0B8C00B30292 /* MyManager.swift in Sources */,
 				48B4EFB51D1D0B8C00B30292 /* UIImage+GIF.m in Sources */,
 				48B4EFAC1D1D0B8C00B30292 /* NSData+ImageContentType.m in Sources */,
+				48B4EFC51D1D1B6600B30292 /* ServerSocket.m in Sources */,
+				48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */,
 				48B4EFBB1D1D0B8C00B30292 /* SQLOperation.swift in Sources */,
 				48B4EFB71D1D0B8C00B30292 /* UIImage+WebP.m in Sources */,
+				48B4EFCA1D20BF1200B30292 /* SocketConfigure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
