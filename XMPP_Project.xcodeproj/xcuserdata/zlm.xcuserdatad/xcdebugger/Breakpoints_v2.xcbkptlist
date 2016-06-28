@@ -137,22 +137,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XMPP_Project/ThreeClass/ZlmLibrary/XMPPManager/XMPP/XMPPServer.swift"
-            timestampString = "488712660.181011"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "connet()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "XMPP_Project/ThreeClass/ZlmLibrary/XMPPManager/SocketOperation/ServerSocket.m"
             timestampString = "488714621.557869"
             startingColumnNumber = "9223372036854775807"
