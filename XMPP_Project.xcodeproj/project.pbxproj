@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484F66301D220D5A003513DC /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F662D1D220D5A003513DC /* AsyncSocket.m */; };
+		484F66311D220D5A003513DC /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F662F1D220D5A003513DC /* AsyncUdpSocket.m */; };
+		484F66331D221278003513DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484F66321D221278003513DC /* CFNetwork.framework */; };
+		484F66351D2212A5003513DC /* AsyncXMPPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F66341D2212A5003513DC /* AsyncXMPPServer.swift */; };
 		48B4EF3A1D1D0B2F00B30292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EF391D1D0B2F00B30292 /* AppDelegate.swift */; };
 		48B4EF3F1D1D0B2F00B30292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B4EF3D1D1D0B2F00B30292 /* Main.storyboard */; };
 		48B4EF411D1D0B2F00B30292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B4EF401D1D0B2F00B30292 /* Assets.xcassets */; };
@@ -60,6 +64,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		484F662C1D220D5A003513DC /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		484F662D1D220D5A003513DC /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		484F662E1D220D5A003513DC /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		484F662F1D220D5A003513DC /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		484F66321D221278003513DC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		484F66341D2212A5003513DC /* AsyncXMPPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncXMPPServer.swift; sourceTree = "<group>"; };
 		48B4EF361D1D0B2F00B30292 /* XMPP_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B4EF391D1D0B2F00B30292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B4EF3E1D1D0B2F00B30292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484F66331D221278003513DC /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +159,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		484F662B1D220D5A003513DC /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				484F662C1D220D5A003513DC /* AsyncSocket.h */,
+				484F662D1D220D5A003513DC /* AsyncSocket.m */,
+				484F662E1D220D5A003513DC /* AsyncUdpSocket.h */,
+				484F662F1D220D5A003513DC /* AsyncUdpSocket.m */,
+			);
+			path = AsyncSocket;
+			sourceTree = "<group>";
+		};
 		48B4EF2D1D1D0B2E00B30292 = {
 			isa = PBXGroup;
 			children = (
+				484F66321D221278003513DC /* CFNetwork.framework */,
 				48B4EF381D1D0B2F00B30292 /* XMPP_Project */,
 				48B4EF4D1D1D0B2F00B30292 /* XMPP_ProjectTests */,
 				48B4EF581D1D0B2F00B30292 /* XMPP_ProjectUITests */,
@@ -359,6 +382,7 @@
 		48B4EFBC1D1D180500B30292 /* XMPPManager */ = {
 			isa = PBXGroup;
 			children = (
+				484F662B1D220D5A003513DC /* AsyncSocket */,
 				48B4EFCB1D20CB6F00B30292 /* XMPP */,
 				48B4EFBD1D1D1B6600B30292 /* SocketOperation */,
 			);
@@ -379,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */,
+				484F66341D2212A5003513DC /* AsyncXMPPServer.swift */,
 			);
 			path = XMPP;
 			sourceTree = "<group>";
@@ -522,6 +547,7 @@
 				48B4EFB11D1D0B8C00B30292 /* SDWebImageDownloaderOperation.m in Sources */,
 				48B4EFB21D1D0B8C00B30292 /* SDWebImageManager.m in Sources */,
 				48B4EFA91D1D0B8C00B30292 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				484F66301D220D5A003513DC /* AsyncSocket.m in Sources */,
 				48B4EFB01D1D0B8C00B30292 /* SDWebImageDownloader.m in Sources */,
 				48B4EFAB1D1D0B8C00B30292 /* MKAnnotationView+WebCache.m in Sources */,
 				48B4EFAE1D1D0B8C00B30292 /* SDWebImageCompat.m in Sources */,
@@ -535,9 +561,11 @@
 				48B4EFAD1D1D0B8C00B30292 /* SDImageCache.m in Sources */,
 				48B4EFA51D1D0B8C00B30292 /* ImageCell.swift in Sources */,
 				48B4EFA81D1D0B8C00B30292 /* NetWorkManage.m in Sources */,
+				484F66311D220D5A003513DC /* AsyncUdpSocket.m in Sources */,
 				48B4EFA71D1D0B8C00B30292 /* MyManager.swift in Sources */,
 				48B4EFB51D1D0B8C00B30292 /* UIImage+GIF.m in Sources */,
 				48B4EFAC1D1D0B8C00B30292 /* NSData+ImageContentType.m in Sources */,
+				484F66351D2212A5003513DC /* AsyncXMPPServer.swift in Sources */,
 				48B4EFC51D1D1B6600B30292 /* ServerSocket.m in Sources */,
 				48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */,
 				48B4EFBB1D1D0B8C00B30292 /* SQLOperation.swift in Sources */,

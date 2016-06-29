@@ -104,6 +104,7 @@ class XMPPServer: NSObject {
      */
     func getConnetStr() -> String
     {
+
         return "<stream:stream to=\""+(SocketConfigure.getInstance.ipconfig as String)+"\" xmlns=\"jabber:client\" xmlns:stream=\"http://etherx.jabber.org/streams\" version=\"1.0\" > "
     }
     
@@ -141,17 +142,12 @@ class XMPPServer: NSObject {
             }
             if message != nil && message!.length>0
             {
-                do{
-                    let result:Int32 = send_msg(XMPPServer.getInstance.sockfd, (message?.UTF8String)!)
-                    if result == -1
-                    {
-                        //发送失败
-                        print("消息发送失败")
-                    }
+                let result:Int32 = send_msg(XMPPServer.getInstance.sockfd, (message?.UTF8String)!)
+                if result == -1
+                {
+                    //发送失败
+                    print("消息发送失败")
                 }
-//                catch{
-//                    print("抛出异常:\(exception())")
-//                }
             }
         }
     }

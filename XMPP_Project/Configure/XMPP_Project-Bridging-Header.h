@@ -13,6 +13,6 @@
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "ServerSocket.h"
 #import "NetWorkManage.h"
-
+#import "AsyncSocket.h"
 
 #endif /* SwiftProject_Bridging_Header_h */

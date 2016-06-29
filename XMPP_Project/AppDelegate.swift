@@ -24,12 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = nc
         
-        //socket登录
-        SocketConfigure.getInstance.ipconfig = "10.3.17.240"
-        SocketConfigure.getInstance.port = 9090
-//        ServerSocket.getInstance()
-//        ServerSocket.beginLoginWithAccount("zlm", password: "zlm")
-        XMPPServer.getInstance.connet()
+//        //socket登录
+//        SocketConfigure.getInstance.ipconfig = "10.3.17.240"
+//        SocketConfigure.getInstance.port = 9090
+//        XMPPServer.getInstance.connet()
+        AsyncXMPPServer.getInstance.socketHost = "10.3.17.240"
+        AsyncXMPPServer.getInstance.socketPort = 9090
+        //确保中断连接
+        if AsyncXMPPServer.getInstance.socket != nil {
+            AsyncXMPPServer.getInstance.socket.setUserData(SocketOffline.User.hashValue)
+            AsyncXMPPServer.getInstance.cutOffSocket()
+        }
+        //连接
+        AsyncXMPPServer.getInstance.socketConnectHost()
+        
+//        let data:String = "<?xml version='1.0'?><stream:stream xmlns:stream='http://etherx.jabber.org/streams' version='1.0' xmlns='jabber:client' to='yealink.com' xml:lang='en' xmlns:xml='http://www.w3.org/XML/1998/namespace' > "
+        let data:String = "<?xml version='1.0'?>"
+        AsyncXMPPServer.getInstance.sendMessageData(data)
+        
         
         
         
