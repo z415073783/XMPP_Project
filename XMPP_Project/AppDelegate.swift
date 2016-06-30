@@ -24,25 +24,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = nc
         
-//        //socket登录
+        
+        
+//MARK: socket连接
 //        SocketConfigure.getInstance.ipconfig = "10.3.17.240"
 //        SocketConfigure.getInstance.port = 9090
 //        XMPPServer.getInstance.connet()
-        AsyncXMPPServer.getInstance.socketHost = "10.3.17.240"
-        AsyncXMPPServer.getInstance.socketPort = 9090
-        //确保中断连接
-        if AsyncXMPPServer.getInstance.socket != nil {
-            AsyncXMPPServer.getInstance.socket.setUserData(SocketOffline.User.hashValue)
-            AsyncXMPPServer.getInstance.cutOffSocket()
-        }
-        //连接
-        AsyncXMPPServer.getInstance.socketConnectHost()
         
+//MARK: AsyncXMPPServer连接
+//        AsyncXMPPServer.getInstance.socketHost = "10.3.17.240"
+//        AsyncXMPPServer.getInstance.socketPort = 9090
+//        //确保中断连接
+//        if AsyncXMPPServer.getInstance.socket != nil {
+//            AsyncXMPPServer.getInstance.socket.setUserData(SocketOffline.User.hashValue)
+//            AsyncXMPPServer.getInstance.cutOffSocket()
+//        }
+//        //连接
+//        AsyncXMPPServer.getInstance.socketConnectHost()
 //        let data:String = "<?xml version='1.0'?><stream:stream xmlns:stream='http://etherx.jabber.org/streams' version='1.0' xmlns='jabber:client' to='yealink.com' xml:lang='en' xmlns:xml='http://www.w3.org/XML/1998/namespace' > "
-        let data:String = "<?xml version='1.0'?>"
-        AsyncXMPPServer.getInstance.sendMessageData(data)
+//        let data:String = "<?xml version='1.0'?>"
+//        AsyncXMPPServer.getInstance.sendMessageData(data)
         
-        
+//MARK: GCDAsyncXMPPServer连接
+//        GCDAsyncXMPPServer.getInstance.socketHost = "10.3.17.240"
+//        GCDAsyncXMPPServer.getInstance.socketPort = 9090
+//        GCDAsyncXMPPServer.getInstance.socketConnectHost()
+//        let data:String = "<?xml version='1.0'?>"
+//        GCDAsyncXMPPServer.getInstance.sendMessageData(data)
         
         
         return true

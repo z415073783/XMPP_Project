@@ -14,5 +14,5 @@
 #import "ServerSocket.h"
 #import "NetWorkManage.h"
 #import "AsyncSocket.h"
-
+#import "GCDAsyncSocket.h"
 #endif /* SwiftProject_Bridging_Header_h */
