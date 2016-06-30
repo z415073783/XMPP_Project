@@ -16,19 +16,27 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view, typically from a nib.
        
-        _tableView = UITableView.init(frame: CGRectZero, style: UITableViewStyle.Plain)
-        self.view.addSubview(_tableView)
-        self.view.backgroundColor = UIColor.whiteColor()
-        _tableView.sd_layout().topSpaceToView(self.view,10).bottomSpaceToView(self.view,10).leftSpaceToView(self.view,10).rightSpaceToView(self.view,10)
-        _tableView.delegate = self
-        _tableView.dataSource = self
-        //注册cell 会自动init cell
-        _tableView.registerClass(ImageCell .classForCoder(), forCellReuseIdentifier: "cell")
-        _tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+//        _tableView = UITableView.init(frame: CGRectZero, style: UITableViewStyle.Plain)
+//        self.view.addSubview(_tableView)
+//        self.view.backgroundColor = UIColor.whiteColor()
+//        _tableView.sd_layout().topSpaceToView(self.view,10).bottomSpaceToView(self.view,10).leftSpaceToView(self.view,10).rightSpaceToView(self.view,10)
+//        _tableView.delegate = self
+//        _tableView.dataSource = self
+//        //注册cell 会自动init cell
+//        _tableView.registerClass(ImageCell .classForCoder(), forCellReuseIdentifier: "cell")
+//        _tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         initData()
-//        initNetData()
+        
+        let ss:TestView = TestView()
+        self.view.addSubview(ss)
+        ss.sd_layout().heightIs(100).widthIs(100).leftSpaceToView(self.view,50).topSpaceToView(self.view,100)
+        
+        ss.layer.cornerRadius = 10
+        ss.backgroundColor = UIColor.yellowColor()
+        
     }
     
     
@@ -45,7 +53,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
             _dataArr.addObject(subModel)
         }
-        _tableView.reloadData()
+//        _tableView.reloadData()
     }
     //获取网络数据
 //    func initNetData() -> Void

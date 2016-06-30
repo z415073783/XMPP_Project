@@ -10,6 +10,12 @@
 		4831B5291D24A5E400853A49 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B5281D24A5E400853A49 /* GCDAsyncSocket.m */; };
 		4831B52B1D24A67000853A49 /* GCDAsyncXMPPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831B52A1D24A67000853A49 /* GCDAsyncXMPPServer.swift */; };
 		4831B52D1D24B9BE00853A49 /* WholeDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831B52C1D24B9BE00853A49 /* WholeDefine.swift */; };
+		4831B5321D24F1A200853A49 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831B5311D24F1A200853A49 /* TestView.swift */; };
+		4831B53D1D25144400853A49 /* MLInputDodger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4831B5341D25144400853A49 /* MLInputDodger.bundle */; };
+		4831B53E1D25144400853A49 /* MLInputDodger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B5361D25144400853A49 /* MLInputDodger.m */; };
+		4831B53F1D25144400853A49 /* MLInputDodgerRetractView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B5381D25144400853A49 /* MLInputDodgerRetractView.m */; };
+		4831B5401D25144400853A49 /* UIScrollView+MLInputDodger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B53A1D25144400853A49 /* UIScrollView+MLInputDodger.m */; };
+		4831B5411D25144400853A49 /* UIView+MLInputDodger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B53C1D25144400853A49 /* UIView+MLInputDodger.m */; };
 		484F66301D220D5A003513DC /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F662D1D220D5A003513DC /* AsyncSocket.m */; };
 		484F66311D220D5A003513DC /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F662F1D220D5A003513DC /* AsyncUdpSocket.m */; };
 		484F66331D221278003513DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484F66321D221278003513DC /* CFNetwork.framework */; };
@@ -47,6 +53,10 @@
 		48B4EFC51D1D1B6600B30292 /* ServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFC11D1D1B6600B30292 /* ServerSocket.m */; };
 		48B4EFCA1D20BF1200B30292 /* SocketConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFC91D20BF1200B30292 /* SocketConfigure.swift */; };
 		48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */; };
+		48B9B5F01D251C930015C2C3 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9B5EF1D251C930015C2C3 /* DrawView.swift */; };
+		48B9B5F21D251DA80015C2C3 /* DrawContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9B5F11D251DA80015C2C3 /* DrawContainer.swift */; };
+		48B9B5F41D251E490015C2C3 /* DrawTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9B5F31D251E490015C2C3 /* DrawTool.swift */; };
+		48B9B5F71D2524A70015C2C3 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B9B5F61D2524A70015C2C3 /* pop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +81,16 @@
 		4831B5281D24A5E400853A49 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		4831B52A1D24A67000853A49 /* GCDAsyncXMPPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDAsyncXMPPServer.swift; sourceTree = "<group>"; };
 		4831B52C1D24B9BE00853A49 /* WholeDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WholeDefine.swift; sourceTree = "<group>"; };
+		4831B5311D24F1A200853A49 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		4831B5341D25144400853A49 /* MLInputDodger.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MLInputDodger.bundle; sourceTree = "<group>"; };
+		4831B5351D25144400853A49 /* MLInputDodger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLInputDodger.h; sourceTree = "<group>"; };
+		4831B5361D25144400853A49 /* MLInputDodger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLInputDodger.m; sourceTree = "<group>"; };
+		4831B5371D25144400853A49 /* MLInputDodgerRetractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLInputDodgerRetractView.h; sourceTree = "<group>"; };
+		4831B5381D25144400853A49 /* MLInputDodgerRetractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLInputDodgerRetractView.m; sourceTree = "<group>"; };
+		4831B5391D25144400853A49 /* UIScrollView+MLInputDodger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MLInputDodger.h"; sourceTree = "<group>"; };
+		4831B53A1D25144400853A49 /* UIScrollView+MLInputDodger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MLInputDodger.m"; sourceTree = "<group>"; };
+		4831B53B1D25144400853A49 /* UIView+MLInputDodger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MLInputDodger.h"; sourceTree = "<group>"; };
+		4831B53C1D25144400853A49 /* UIView+MLInputDodger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MLInputDodger.m"; sourceTree = "<group>"; };
 		484F662C1D220D5A003513DC /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
 		484F662D1D220D5A003513DC /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
 		484F662E1D220D5A003513DC /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
@@ -138,6 +158,10 @@
 		48B4EFC11D1D1B6600B30292 /* ServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerSocket.m; sourceTree = "<group>"; };
 		48B4EFC91D20BF1200B30292 /* SocketConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConfigure.swift; sourceTree = "<group>"; };
 		48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPServer.swift; sourceTree = "<group>"; };
+		48B9B5EF1D251C930015C2C3 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		48B9B5F11D251DA80015C2C3 /* DrawContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawContainer.swift; sourceTree = "<group>"; };
+		48B9B5F31D251E490015C2C3 /* DrawTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawTool.swift; sourceTree = "<group>"; };
+		48B9B5F61D2524A70015C2C3 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B9B5F71D2524A70015C2C3 /* pop.framework in Frameworks */,
 				484F66331D221278003513DC /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +198,22 @@
 				4831B5281D24A5E400853A49 /* GCDAsyncSocket.m */,
 			);
 			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		4831B5331D25144400853A49 /* MLInputDodger */ = {
+			isa = PBXGroup;
+			children = (
+				4831B5341D25144400853A49 /* MLInputDodger.bundle */,
+				4831B5351D25144400853A49 /* MLInputDodger.h */,
+				4831B5361D25144400853A49 /* MLInputDodger.m */,
+				4831B5371D25144400853A49 /* MLInputDodgerRetractView.h */,
+				4831B5381D25144400853A49 /* MLInputDodgerRetractView.m */,
+				4831B5391D25144400853A49 /* UIScrollView+MLInputDodger.h */,
+				4831B53A1D25144400853A49 /* UIScrollView+MLInputDodger.m */,
+				4831B53B1D25144400853A49 /* UIView+MLInputDodger.h */,
+				4831B53C1D25144400853A49 /* UIView+MLInputDodger.m */,
+			);
+			path = MLInputDodger;
 			sourceTree = "<group>";
 		};
 		484F662B1D220D5A003513DC /* AsyncSocket */ = {
@@ -289,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				48B4EF701D1D0B8C00B30292 /* ImageCell.swift */,
+				4831B5311D24F1A200853A49 /* TestView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +353,8 @@
 		48B4EF751D1D0B8C00B30292 /* ThreeClass */ = {
 			isa = PBXGroup;
 			children = (
+				48B9B5F51D2524A70015C2C3 /* Pop */,
+				4831B5331D25144400853A49 /* MLInputDodger */,
 				48B4EF761D1D0B8C00B30292 /* Network */,
 				48B4EF791D1D0B8C00B30292 /* SDAutoLayout */,
 				48B4EF7E1D1D0B8C00B30292 /* SDWebImage */,
@@ -382,6 +426,7 @@
 		48B4EFA01D1D0B8C00B30292 /* ZlmLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				48B9B5EE1D251C7C0015C2C3 /* DrawManager */,
 				48B4EFBC1D1D180500B30292 /* XMPPManager */,
 				48B4EFA11D1D0B8C00B30292 /* SQLManager */,
 			);
@@ -425,6 +470,24 @@
 				4831B52A1D24A67000853A49 /* GCDAsyncXMPPServer.swift */,
 			);
 			path = XMPP;
+			sourceTree = "<group>";
+		};
+		48B9B5EE1D251C7C0015C2C3 /* DrawManager */ = {
+			isa = PBXGroup;
+			children = (
+				48B9B5EF1D251C930015C2C3 /* DrawView.swift */,
+				48B9B5F11D251DA80015C2C3 /* DrawContainer.swift */,
+				48B9B5F31D251E490015C2C3 /* DrawTool.swift */,
+			);
+			path = DrawManager;
+			sourceTree = "<group>";
+		};
+		48B9B5F51D2524A70015C2C3 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				48B9B5F61D2524A70015C2C3 /* pop.framework */,
+			);
+			path = Pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,6 +597,7 @@
 			files = (
 				48B4EF441D1D0B2F00B30292 /* LaunchScreen.storyboard in Resources */,
 				48B4EF411D1D0B2F00B30292 /* Assets.xcassets in Resources */,
+				4831B53D1D25144400853A49 /* MLInputDodger.bundle in Resources */,
 				48B4EF3F1D1D0B2F00B30292 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,19 +632,26 @@
 				48B4EFB11D1D0B8C00B30292 /* SDWebImageDownloaderOperation.m in Sources */,
 				48B4EFB21D1D0B8C00B30292 /* SDWebImageManager.m in Sources */,
 				48B4EFA91D1D0B8C00B30292 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				48B9B5F41D251E490015C2C3 /* DrawTool.swift in Sources */,
 				484F66301D220D5A003513DC /* AsyncSocket.m in Sources */,
 				48B4EFB01D1D0B8C00B30292 /* SDWebImageDownloader.m in Sources */,
+				4831B5411D25144400853A49 /* UIView+MLInputDodger.m in Sources */,
 				48B4EFAB1D1D0B8C00B30292 /* MKAnnotationView+WebCache.m in Sources */,
 				48B4EFAE1D1D0B8C00B30292 /* SDWebImageCompat.m in Sources */,
+				4831B53F1D25144400853A49 /* MLInputDodgerRetractView.m in Sources */,
 				48B4EFB31D1D0B8C00B30292 /* SDWebImagePrefetcher.m in Sources */,
 				48B4EFBA1D1D0B8C00B30292 /* UIView+WebCacheOperation.m in Sources */,
+				4831B5401D25144400853A49 /* UIScrollView+MLInputDodger.m in Sources */,
 				48B4EFB61D1D0B8C00B30292 /* UIImage+MultiFormat.m in Sources */,
 				48B4EF3A1D1D0B2F00B30292 /* AppDelegate.swift in Sources */,
 				48B4EFA41D1D0B8C00B30292 /* ImageModel.swift in Sources */,
 				48B4EFB41D1D0B8C00B30292 /* UIButton+WebCache.m in Sources */,
 				48B4EFAA1D1D0B8C00B30292 /* UIView+SDAutoLayout.m in Sources */,
 				48B4EFAD1D1D0B8C00B30292 /* SDImageCache.m in Sources */,
+				4831B5321D24F1A200853A49 /* TestView.swift in Sources */,
+				48B9B5F21D251DA80015C2C3 /* DrawContainer.swift in Sources */,
 				48B4EFA51D1D0B8C00B30292 /* ImageCell.swift in Sources */,
+				48B9B5F01D251C930015C2C3 /* DrawView.swift in Sources */,
 				48B4EFA81D1D0B8C00B30292 /* NetWorkManage.m in Sources */,
 				484F66311D220D5A003513DC /* AsyncUdpSocket.m in Sources */,
 				48B4EFA71D1D0B8C00B30292 /* MyManager.swift in Sources */,
@@ -590,6 +661,7 @@
 				48B4EFC51D1D1B6600B30292 /* ServerSocket.m in Sources */,
 				48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */,
 				48B4EFBB1D1D0B8C00B30292 /* SQLOperation.swift in Sources */,
+				4831B53E1D25144400853A49 /* MLInputDodger.m in Sources */,
 				48B4EFB71D1D0B8C00B30292 /* UIImage+WebP.m in Sources */,
 				4831B52D1D24B9BE00853A49 /* WholeDefine.swift in Sources */,
 				48B4EFCA1D20BF1200B30292 /* SocketConfigure.swift in Sources */,
@@ -737,6 +809,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XMPP_Project/ThreeClass/Pop",
+				);
 				INFOPLIST_FILE = XMPP_Project/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -751,6 +827,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XMPP_Project/ThreeClass/Pop",
+				);
 				INFOPLIST_FILE = XMPP_Project/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

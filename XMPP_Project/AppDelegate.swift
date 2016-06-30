@@ -24,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = nc
         
-        
+//        var ss:NSString! = "asd"
+//        ss = nil
+//        print("\(ss.length)")
         
 //MARK: socket连接
 //        SocketConfigure.getInstance.ipconfig = "10.3.17.240"

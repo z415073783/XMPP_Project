@@ -15,4 +15,6 @@
 #import "NetWorkManage.h"
 #import "AsyncSocket.h"
 #import "GCDAsyncSocket.h"
+#import "MLInputDodger.h"
+#import "pop/POP.h"
 #endif /* SwiftProject_Bridging_Header_h */

@@ -78,7 +78,6 @@ class ImageCell: UITableViewCell
         _imageV.sd_setImageWithURL(NSURL.init(string: sender._imageStr!)) { (image, error, ImageCacheType, url) in
                 _weakImageV!.sd_layout().heightIs(image.size.height).widthIs(image.size.width)
             _weakSelf!.setupAutoHeightWithBottomView(_weakSelf!._imageV, bottomMargin:60)
-        
         }
         
    
