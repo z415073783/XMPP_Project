@@ -28,14 +28,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //        //注册cell 会自动init cell
 //        _tableView.registerClass(ImageCell .classForCoder(), forCellReuseIdentifier: "cell")
 //        _tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        initData()
+//        initData()
+//        
+//        let ss:TestView = TestView()
+//        self.view.addSubview(ss)
+//        ss.sd_layout().heightIs(100).widthIs(100).leftSpaceToView(self.view,50).topSpaceToView(self.view,100)
+//        
+//        ss.layer.cornerRadius = 10
+//        ss.backgroundColor = UIColor.yellowColor()
+        let drawView:DrawView = DrawView()
+        self.view.addSubview(drawView)
+        drawView.sd_layout().topSpaceToView(self.navigationController?.navigationBar,5)
+        drawView.snp_makeConstraints { (make) in
+            make.left.equalTo(self.view).offset(5)
+            make.right.equalTo(self.view).offset(-5)
+//            make.top.equalTo((self.navigationController?.navigationBar)!).offset(10)
+            make.bottom.equalTo(self.view).offset(-5);
+        }
         
-        let ss:TestView = TestView()
-        self.view.addSubview(ss)
-        ss.sd_layout().heightIs(100).widthIs(100).leftSpaceToView(self.view,50).topSpaceToView(self.view,100)
-        
-        ss.layer.cornerRadius = 10
-        ss.backgroundColor = UIColor.yellowColor()
         
     }
     

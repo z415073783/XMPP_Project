@@ -8,7 +8,7 @@
 
 import Foundation
 let __Function__:Void = print("1111")
-
+let WHOLEDEFINE_FONTNAME_DEFAULT = "Helvetica"
 
 
 //class WholeDefine: NSObject {

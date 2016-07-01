@@ -20,6 +20,21 @@
 		484F66311D220D5A003513DC /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F662F1D220D5A003513DC /* AsyncUdpSocket.m */; };
 		484F66331D221278003513DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484F66321D221278003513DC /* CFNetwork.framework */; };
 		484F66351D2212A5003513DC /* AsyncXMPPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F66341D2212A5003513DC /* AsyncXMPPServer.swift */; };
+		4860B3511D260C1B00195E25 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3431D260C1B00195E25 /* Constraint.swift */; };
+		4860B3521D260C1B00195E25 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3441D260C1B00195E25 /* ConstraintAttributes.swift */; };
+		4860B3531D260C1B00195E25 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3451D260C1B00195E25 /* ConstraintDescription.swift */; };
+		4860B3541D260C1B00195E25 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3461D260C1B00195E25 /* ConstraintItem.swift */; };
+		4860B3551D260C1B00195E25 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3471D260C1B00195E25 /* ConstraintMaker.swift */; };
+		4860B3561D260C1B00195E25 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3481D260C1B00195E25 /* ConstraintRelation.swift */; };
+		4860B3571D260C1B00195E25 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3491D260C1B00195E25 /* Debugging.swift */; };
+		4860B3581D260C1C00195E25 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B34A1D260C1B00195E25 /* EdgeInsets.swift */; };
+		4860B3591D260C1C00195E25 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4860B34B1D260C1B00195E25 /* Info.plist */; };
+		4860B35A1D260C1C00195E25 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B34C1D260C1B00195E25 /* LayoutConstraint.swift */; };
+		4860B35B1D260C1C00195E25 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B34E1D260C1B00195E25 /* SnapKit.swift */; };
+		4860B35C1D260C1C00195E25 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B34F1D260C1B00195E25 /* View+SnapKit.swift */; };
+		4860B35D1D260C1C00195E25 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3501D260C1B00195E25 /* ViewController+SnapKit.swift */; };
+		4860B35F1D260DD100195E25 /* DrawLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B35E1D260DD100195E25 /* DrawLayer.swift */; };
+		4860B3611D261B7200195E25 /* DrawTool_Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860B3601D261B7200195E25 /* DrawTool_Line.swift */; };
 		48B4EF3A1D1D0B2F00B30292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EF391D1D0B2F00B30292 /* AppDelegate.swift */; };
 		48B4EF3F1D1D0B2F00B30292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B4EF3D1D1D0B2F00B30292 /* Main.storyboard */; };
 		48B4EF411D1D0B2F00B30292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B4EF401D1D0B2F00B30292 /* Assets.xcassets */; };
@@ -54,7 +69,6 @@
 		48B4EFCA1D20BF1200B30292 /* SocketConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFC91D20BF1200B30292 /* SocketConfigure.swift */; };
 		48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */; };
 		48B9B5F01D251C930015C2C3 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9B5EF1D251C930015C2C3 /* DrawView.swift */; };
-		48B9B5F21D251DA80015C2C3 /* DrawContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9B5F11D251DA80015C2C3 /* DrawContainer.swift */; };
 		48B9B5F41D251E490015C2C3 /* DrawTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9B5F31D251E490015C2C3 /* DrawTool.swift */; };
 		48B9B5F71D2524A70015C2C3 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B9B5F61D2524A70015C2C3 /* pop.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +111,22 @@
 		484F662F1D220D5A003513DC /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
 		484F66321D221278003513DC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		484F66341D2212A5003513DC /* AsyncXMPPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncXMPPServer.swift; sourceTree = "<group>"; };
+		4860B3431D260C1B00195E25 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		4860B3441D260C1B00195E25 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		4860B3451D260C1B00195E25 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		4860B3461D260C1B00195E25 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		4860B3471D260C1B00195E25 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		4860B3481D260C1B00195E25 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		4860B3491D260C1B00195E25 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		4860B34A1D260C1B00195E25 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		4860B34B1D260C1B00195E25 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4860B34C1D260C1B00195E25 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		4860B34D1D260C1B00195E25 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		4860B34E1D260C1B00195E25 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		4860B34F1D260C1B00195E25 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		4860B3501D260C1B00195E25 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		4860B35E1D260DD100195E25 /* DrawLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLayer.swift; sourceTree = "<group>"; };
+		4860B3601D261B7200195E25 /* DrawTool_Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawTool_Line.swift; sourceTree = "<group>"; };
 		48B4EF361D1D0B2F00B30292 /* XMPP_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B4EF391D1D0B2F00B30292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B4EF3E1D1D0B2F00B30292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,7 +189,6 @@
 		48B4EFC91D20BF1200B30292 /* SocketConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConfigure.swift; sourceTree = "<group>"; };
 		48B4EFCC1D20CB7F00B30292 /* XMPPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPServer.swift; sourceTree = "<group>"; };
 		48B9B5EF1D251C930015C2C3 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
-		48B9B5F11D251DA80015C2C3 /* DrawContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawContainer.swift; sourceTree = "<group>"; };
 		48B9B5F31D251E490015C2C3 /* DrawTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawTool.swift; sourceTree = "<group>"; };
 		48B9B5F61D2524A70015C2C3 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +254,27 @@
 				484F662F1D220D5A003513DC /* AsyncUdpSocket.m */,
 			);
 			path = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		4860B3421D260C1B00195E25 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				4860B3431D260C1B00195E25 /* Constraint.swift */,
+				4860B3441D260C1B00195E25 /* ConstraintAttributes.swift */,
+				4860B3451D260C1B00195E25 /* ConstraintDescription.swift */,
+				4860B3461D260C1B00195E25 /* ConstraintItem.swift */,
+				4860B3471D260C1B00195E25 /* ConstraintMaker.swift */,
+				4860B3481D260C1B00195E25 /* ConstraintRelation.swift */,
+				4860B3491D260C1B00195E25 /* Debugging.swift */,
+				4860B34A1D260C1B00195E25 /* EdgeInsets.swift */,
+				4860B34B1D260C1B00195E25 /* Info.plist */,
+				4860B34C1D260C1B00195E25 /* LayoutConstraint.swift */,
+				4860B34D1D260C1B00195E25 /* SnapKit.h */,
+				4860B34E1D260C1B00195E25 /* SnapKit.swift */,
+				4860B34F1D260C1B00195E25 /* View+SnapKit.swift */,
+				4860B3501D260C1B00195E25 /* ViewController+SnapKit.swift */,
+			);
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		48B4EF2D1D1D0B2E00B30292 = {
@@ -353,6 +403,7 @@
 		48B4EF751D1D0B8C00B30292 /* ThreeClass */ = {
 			isa = PBXGroup;
 			children = (
+				4860B3421D260C1B00195E25 /* SnapKit */,
 				48B9B5F51D2524A70015C2C3 /* Pop */,
 				4831B5331D25144400853A49 /* MLInputDodger */,
 				48B4EF761D1D0B8C00B30292 /* Network */,
@@ -475,9 +526,10 @@
 		48B9B5EE1D251C7C0015C2C3 /* DrawManager */ = {
 			isa = PBXGroup;
 			children = (
+				4860B35E1D260DD100195E25 /* DrawLayer.swift */,
 				48B9B5EF1D251C930015C2C3 /* DrawView.swift */,
-				48B9B5F11D251DA80015C2C3 /* DrawContainer.swift */,
 				48B9B5F31D251E490015C2C3 /* DrawTool.swift */,
+				4860B3601D261B7200195E25 /* DrawTool_Line.swift */,
 			);
 			path = DrawManager;
 			sourceTree = "<group>";
@@ -598,6 +650,7 @@
 				48B4EF441D1D0B2F00B30292 /* LaunchScreen.storyboard in Resources */,
 				48B4EF411D1D0B2F00B30292 /* Assets.xcassets in Resources */,
 				4831B53D1D25144400853A49 /* MLInputDodger.bundle in Resources */,
+				4860B3591D260C1C00195E25 /* Info.plist in Resources */,
 				48B4EF3F1D1D0B2F00B30292 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +678,7 @@
 			files = (
 				4831B5291D24A5E400853A49 /* GCDAsyncSocket.m in Sources */,
 				48B4EFB81D1D0B8C00B30292 /* UIImageView+HighlightedWebCache.m in Sources */,
+				4860B35B1D260C1C00195E25 /* SnapKit.swift in Sources */,
 				48B4EFAF1D1D0B8C00B30292 /* SDWebImageDecoder.m in Sources */,
 				4831B52B1D24A67000853A49 /* GCDAsyncXMPPServer.swift in Sources */,
 				48B4EFB91D1D0B8C00B30292 /* UIImageView+WebCache.m in Sources */,
@@ -635,36 +689,48 @@
 				48B9B5F41D251E490015C2C3 /* DrawTool.swift in Sources */,
 				484F66301D220D5A003513DC /* AsyncSocket.m in Sources */,
 				48B4EFB01D1D0B8C00B30292 /* SDWebImageDownloader.m in Sources */,
+				4860B35D1D260C1C00195E25 /* ViewController+SnapKit.swift in Sources */,
+				4860B3581D260C1C00195E25 /* EdgeInsets.swift in Sources */,
 				4831B5411D25144400853A49 /* UIView+MLInputDodger.m in Sources */,
+				4860B35A1D260C1C00195E25 /* LayoutConstraint.swift in Sources */,
 				48B4EFAB1D1D0B8C00B30292 /* MKAnnotationView+WebCache.m in Sources */,
 				48B4EFAE1D1D0B8C00B30292 /* SDWebImageCompat.m in Sources */,
 				4831B53F1D25144400853A49 /* MLInputDodgerRetractView.m in Sources */,
 				48B4EFB31D1D0B8C00B30292 /* SDWebImagePrefetcher.m in Sources */,
 				48B4EFBA1D1D0B8C00B30292 /* UIView+WebCacheOperation.m in Sources */,
 				4831B5401D25144400853A49 /* UIScrollView+MLInputDodger.m in Sources */,
+				4860B3541D260C1B00195E25 /* ConstraintItem.swift in Sources */,
 				48B4EFB61D1D0B8C00B30292 /* UIImage+MultiFormat.m in Sources */,
 				48B4EF3A1D1D0B2F00B30292 /* AppDelegate.swift in Sources */,
+				4860B3561D260C1B00195E25 /* ConstraintRelation.swift in Sources */,
+				4860B35F1D260DD100195E25 /* DrawLayer.swift in Sources */,
 				48B4EFA41D1D0B8C00B30292 /* ImageModel.swift in Sources */,
 				48B4EFB41D1D0B8C00B30292 /* UIButton+WebCache.m in Sources */,
+				4860B3551D260C1B00195E25 /* ConstraintMaker.swift in Sources */,
 				48B4EFAA1D1D0B8C00B30292 /* UIView+SDAutoLayout.m in Sources */,
 				48B4EFAD1D1D0B8C00B30292 /* SDImageCache.m in Sources */,
 				4831B5321D24F1A200853A49 /* TestView.swift in Sources */,
-				48B9B5F21D251DA80015C2C3 /* DrawContainer.swift in Sources */,
 				48B4EFA51D1D0B8C00B30292 /* ImageCell.swift in Sources */,
 				48B9B5F01D251C930015C2C3 /* DrawView.swift in Sources */,
+				4860B3611D261B7200195E25 /* DrawTool_Line.swift in Sources */,
 				48B4EFA81D1D0B8C00B30292 /* NetWorkManage.m in Sources */,
 				484F66311D220D5A003513DC /* AsyncUdpSocket.m in Sources */,
+				4860B3511D260C1B00195E25 /* Constraint.swift in Sources */,
 				48B4EFA71D1D0B8C00B30292 /* MyManager.swift in Sources */,
 				48B4EFB51D1D0B8C00B30292 /* UIImage+GIF.m in Sources */,
 				48B4EFAC1D1D0B8C00B30292 /* NSData+ImageContentType.m in Sources */,
 				484F66351D2212A5003513DC /* AsyncXMPPServer.swift in Sources */,
 				48B4EFC51D1D1B6600B30292 /* ServerSocket.m in Sources */,
+				4860B3521D260C1B00195E25 /* ConstraintAttributes.swift in Sources */,
+				4860B35C1D260C1C00195E25 /* View+SnapKit.swift in Sources */,
 				48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */,
 				48B4EFBB1D1D0B8C00B30292 /* SQLOperation.swift in Sources */,
+				4860B3571D260C1B00195E25 /* Debugging.swift in Sources */,
 				4831B53E1D25144400853A49 /* MLInputDodger.m in Sources */,
 				48B4EFB71D1D0B8C00B30292 /* UIImage+WebP.m in Sources */,
 				4831B52D1D24B9BE00853A49 /* WholeDefine.swift in Sources */,
 				48B4EFCA1D20BF1200B30292 /* SocketConfigure.swift in Sources */,
+				4860B3531D260C1B00195E25 /* ConstraintDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,7 +880,7 @@
 					"$(PROJECT_DIR)/XMPP_Project/ThreeClass/Pop",
 				);
 				INFOPLIST_FILE = XMPP_Project/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yealink.XMPP-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -832,7 +898,7 @@
 					"$(PROJECT_DIR)/XMPP_Project/ThreeClass/Pop",
 				);
 				INFOPLIST_FILE = XMPP_Project/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yealink.XMPP-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
