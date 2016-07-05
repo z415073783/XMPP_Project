@@ -16,4 +16,5 @@ class MyManager: NSObject {
         
         //        getInstance
     }
+    
 }

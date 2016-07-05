@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = nc
         
+//        MyManager.getInstance.
+        
 //        var ss:NSString! = "asd"
 //        ss = nil
 //        print("\(ss.length)")
