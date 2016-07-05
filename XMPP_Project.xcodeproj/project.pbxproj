@@ -16,6 +16,7 @@
 		4831B53F1D25144400853A49 /* MLInputDodgerRetractView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B5381D25144400853A49 /* MLInputDodgerRetractView.m */; };
 		4831B5401D25144400853A49 /* UIScrollView+MLInputDodger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B53A1D25144400853A49 /* UIScrollView+MLInputDodger.m */; };
 		4831B5411D25144400853A49 /* UIView+MLInputDodger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4831B53C1D25144400853A49 /* UIView+MLInputDodger.m */; };
+		484F3E4B1D2BB3720005DBC5 /* TouchScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F3E4A1D2BB3720005DBC5 /* TouchScrollView.swift */; };
 		484F66301D220D5A003513DC /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F662D1D220D5A003513DC /* AsyncSocket.m */; };
 		484F66311D220D5A003513DC /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F662F1D220D5A003513DC /* AsyncUdpSocket.m */; };
 		484F66331D221278003513DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484F66321D221278003513DC /* CFNetwork.framework */; };
@@ -105,6 +106,7 @@
 		4831B53A1D25144400853A49 /* UIScrollView+MLInputDodger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MLInputDodger.m"; sourceTree = "<group>"; };
 		4831B53B1D25144400853A49 /* UIView+MLInputDodger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MLInputDodger.h"; sourceTree = "<group>"; };
 		4831B53C1D25144400853A49 /* UIView+MLInputDodger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MLInputDodger.m"; sourceTree = "<group>"; };
+		484F3E4A1D2BB3720005DBC5 /* TouchScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchScrollView.swift; sourceTree = "<group>"; };
 		484F662C1D220D5A003513DC /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
 		484F662D1D220D5A003513DC /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
 		484F662E1D220D5A003513DC /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
@@ -243,6 +245,14 @@
 				4831B53C1D25144400853A49 /* UIView+MLInputDodger.m */,
 			);
 			path = MLInputDodger;
+			sourceTree = "<group>";
+		};
+		484F3E471D2BB2470005DBC5 /* TouchScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				484F3E4A1D2BB3720005DBC5 /* TouchScrollView.swift */,
+			);
+			path = TouchScrollView;
 			sourceTree = "<group>";
 		};
 		484F662B1D220D5A003513DC /* AsyncSocket */ = {
@@ -477,6 +487,7 @@
 		48B4EFA01D1D0B8C00B30292 /* ZlmLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				484F3E471D2BB2470005DBC5 /* TouchScrollView */,
 				48B9B5EE1D251C7C0015C2C3 /* DrawManager */,
 				48B4EFBC1D1D180500B30292 /* XMPPManager */,
 				48B4EFA11D1D0B8C00B30292 /* SQLManager */,
@@ -721,6 +732,7 @@
 				48B4EFAC1D1D0B8C00B30292 /* NSData+ImageContentType.m in Sources */,
 				484F66351D2212A5003513DC /* AsyncXMPPServer.swift in Sources */,
 				48B4EFC51D1D1B6600B30292 /* ServerSocket.m in Sources */,
+				484F3E4B1D2BB3720005DBC5 /* TouchScrollView.swift in Sources */,
 				4860B3521D260C1B00195E25 /* ConstraintAttributes.swift in Sources */,
 				4860B35C1D260C1C00195E25 /* View+SnapKit.swift in Sources */,
 				48B4EFCD1D20CB7F00B30292 /* XMPPServer.swift in Sources */,
