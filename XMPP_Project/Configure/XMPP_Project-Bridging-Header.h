@@ -17,4 +17,5 @@
 #import "GCDAsyncSocket.h"
 #import "MLInputDodger.h"
 #import "pop/POP.h"
+#import "KeyChainUUID.h"
 #endif /* SwiftProject_Bridging_Header_h */

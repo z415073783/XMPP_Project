@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let data:String = "<?xml version='1.0'?>"
 //        GCDAsyncXMPPServer.getInstance.sendMessageData(data)
         
-        
+         print("\(KeyChainUUID.getUUID())")
         return true
     }
 
